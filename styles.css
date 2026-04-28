@@ -8,18 +8,19 @@
    ============================================================================= */
 
 :root {
-  --bg:           #ffffff;
-  --bg-secondary: #f6f6f6;
+  --bg:           #fdf4f7;          /* warm blush tint */
+  --bg-secondary: #f5e8ee;
   --text:         #0a0a0a;
   --text-muted:   #6b7280;
   --text-light:   #adb5bd;
-  --accent:       #d4678a;          /* EDIT: change this hex to recolour everything */
+  --accent:       #d4678a;
   --accent-alpha: rgba(212,103,138,0.08);
-  --border:       #e8e8e8;
-  --card-bg:      #fafafa;
-  --nav-bg:       rgba(255,255,255,0.82);
-  --shadow-sm:    0 1px 3px rgba(0,0,0,0.06), 0 2px 8px rgba(0,0,0,0.04);
-  --shadow-md:    0 4px 24px rgba(0,0,0,0.10);
+  --border:       #ead5de;
+  --card-bg:      #fff8fa;
+  --nav-bg:       rgba(253,244,247,0.85);
+  --dot-color:    rgba(212,103,138,0.13);
+  --shadow-sm:    0 1px 3px rgba(180,80,120,0.06), 0 2px 8px rgba(180,80,120,0.04);
+  --shadow-md:    0 4px 24px rgba(180,80,120,0.10);
   --font:         'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --radius:       14px;
   --radius-sm:    7px;
@@ -28,16 +29,17 @@
 }
 
 [data-theme="dark"] {
-  --bg:           #0c0c0c;
-  --bg-secondary: #141414;
+  --bg:           #120d0f;          /* warm dark */
+  --bg-secondary: #1c1215;
   --text:         #f0f0f0;
   --text-muted:   #9ca3af;
   --text-light:   #555;
   --accent:       #f0a0bc;
   --accent-alpha: rgba(240,160,188,0.12);
-  --border:       #1e1e1e;
-  --card-bg:      #111111;
-  --nav-bg:       rgba(12,12,12,0.82);
+  --border:       #2a1820;
+  --card-bg:      #1a1015;
+  --nav-bg:       rgba(18,13,15,0.85);
+  --dot-color:    rgba(240,160,188,0.07);
   --shadow-sm:    0 1px 3px rgba(0,0,0,0.4),  0 2px 8px rgba(0,0,0,0.25);
   --shadow-md:    0 4px 24px rgba(0,0,0,0.5);
 }
@@ -52,12 +54,14 @@
 html { scroll-behavior: smooth; font-size: 16px; }
 
 body {
-  background:  var(--bg);
+  background-color:  var(--bg);
+  background-image:  radial-gradient(circle, var(--dot-color) 1.2px, transparent 1.2px);
+  background-size:   28px 28px;
   color:       var(--text);
   font-family: var(--font);
   line-height: 1.6;
   overflow-x:  hidden;
-  transition:  background var(--ease), color var(--ease);
+  transition:  background-color var(--ease), color var(--ease);
 }
 
 img    { max-width: 100%; display: block; }
@@ -190,15 +194,15 @@ h3 { font-size: 1.15rem; }
 
 .hero-blob { position: absolute; border-radius: 50%; pointer-events: none; filter: blur(80px); }
 .hero-blob-1 {
-  width: 520px; height: 520px; top: -12%; right: -10%;
-  background: radial-gradient(circle, rgba(67,56,202,0.08) 0%, transparent 70%);
+  width: 600px; height: 600px; top: -15%; right: -8%;
+  background: radial-gradient(circle, rgba(212,103,138,0.18) 0%, transparent 65%);
 }
 .hero-blob-2 {
-  width: 320px; height: 320px; bottom: 5%; left: -5%;
-  background: radial-gradient(circle, rgba(67,56,202,0.05) 0%, transparent 70%);
+  width: 380px; height: 380px; bottom: 0%; left: -8%;
+  background: radial-gradient(circle, rgba(212,103,138,0.12) 0%, transparent 65%);
 }
-[data-theme="dark"] .hero-blob-1 { background: radial-gradient(circle, rgba(129,140,248,0.1) 0%, transparent 70%); }
-[data-theme="dark"] .hero-blob-2 { background: radial-gradient(circle, rgba(129,140,248,0.06) 0%, transparent 70%); }
+[data-theme="dark"] .hero-blob-1 { background: radial-gradient(circle, rgba(240,160,188,0.12) 0%, transparent 65%); }
+[data-theme="dark"] .hero-blob-2 { background: radial-gradient(circle, rgba(240,160,188,0.08) 0%, transparent 65%); }
 
 .hero-content { max-width: var(--max-width); margin: 0 auto; width: 100%; position: relative; z-index: 1; }
 
@@ -641,7 +645,7 @@ h3 { font-size: 1.15rem; }
    12. EDUCATION
    ============================================================================= */
 
-.education { background: var(--bg-secondary); }
+.education { background: var(--bg-secondary); background-image: none; }
 
 .education-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
 
@@ -674,7 +678,7 @@ h3 { font-size: 1.15rem; }
    13. CONTACT
    ============================================================================= */
 
-.contact { background: var(--bg-secondary); }
+.contact { background: var(--bg-secondary); background-image: none; }
 .contact-inner { text-align: center; max-width: 560px; margin: 0 auto; }
 .contact-inner .section-label { margin-bottom: 1rem; }
 .contact-inner .section-heading { margin-bottom: 0; }
