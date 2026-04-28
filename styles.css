@@ -13,12 +13,12 @@
   --text:         #0a0a0a;
   --text-muted:   #6b7280;
   --text-light:   #adb5bd;
-  --accent:       #d4678a;
-  --accent-alpha: rgba(212,103,138,0.07);
+  --accent:       #5f7a9d;
+  --accent-alpha: rgba(95,122,157,0.07);
   --border:       #e5e5e5;
   --card-bg:      #ffffff;
   --nav-bg:       rgba(249,249,249,0.85);
-  --dot-color:    rgba(212,103,138,0.07);
+  --dot-color:    rgba(95,122,157,0.08);
   --shadow-sm:    0 1px 3px rgba(0,0,0,0.06), 0 2px 8px rgba(0,0,0,0.04);
   --shadow-md:    0 4px 24px rgba(0,0,0,0.10);
   --font:         'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -34,12 +34,12 @@
   --text:         #f0f0f0;
   --text-muted:   #9ca3af;
   --text-light:   #555;
-  --accent:       #f0a0bc;
-  --accent-alpha: rgba(240,160,188,0.10);
+  --accent:       #8faac7;
+  --accent-alpha: rgba(143,170,199,0.10);
   --border:       #1e1e1e;
   --card-bg:      #111111;
   --nav-bg:       rgba(12,12,12,0.85);
-  --dot-color:    rgba(240,160,188,0.05);
+  --dot-color:    rgba(143,170,199,0.06);
   --shadow-sm:    0 1px 3px rgba(0,0,0,0.4),  0 2px 8px rgba(0,0,0,0.25);
   --shadow-md:    0 4px 24px rgba(0,0,0,0.5);
 }
@@ -195,14 +195,14 @@ h3 { font-size: 1.15rem; }
 .hero-blob { position: absolute; border-radius: 50%; pointer-events: none; filter: blur(80px); }
 .hero-blob-1 {
   width: 520px; height: 520px; top: -12%; right: -10%;
-  background: radial-gradient(circle, rgba(212,103,138,0.09) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(95,122,157,0.09) 0%, transparent 70%);
 }
 .hero-blob-2 {
   width: 320px; height: 320px; bottom: 5%; left: -5%;
-  background: radial-gradient(circle, rgba(212,103,138,0.06) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(95,122,157,0.06) 0%, transparent 70%);
 }
-[data-theme="dark"] .hero-blob-1 { background: radial-gradient(circle, rgba(240,160,188,0.07) 0%, transparent 70%); }
-[data-theme="dark"] .hero-blob-2 { background: radial-gradient(circle, rgba(240,160,188,0.05) 0%, transparent 70%); }
+[data-theme="dark"] .hero-blob-1 { background: radial-gradient(circle, rgba(143,170,199,0.07) 0%, transparent 70%); }
+[data-theme="dark"] .hero-blob-2 { background: radial-gradient(circle, rgba(143,170,199,0.05) 0%, transparent 70%); }
 
 .hero-content { max-width: var(--max-width); margin: 0 auto; width: 100%; position: relative; z-index: 1; }
 
