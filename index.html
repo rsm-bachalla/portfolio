@@ -3,16 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Bindu Priyanka — Product, Data & AI" />
-  <meta property="og:title" content="Bindu Priyanka" />
-  <meta property="og:description" content="I build products, work with data, and experiment with AI to solve real problems." />
-  <title>Bindu Priyanka</title>
+  <meta name="description" content="Bindu Priyanka Achalla — Product, Data & AI" />
+  <meta property="og:title" content="Bindu Priyanka Achalla" />
+  <meta property="og:description" content="I build products, work with data, and experiment with AI to solve real-world problems." />
+  <title>Bindu Priyanka Achalla</title>
 
-  <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -22,33 +20,32 @@
        ============================================================ -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="#hero" class="nav-logo">BP</a>
+      <a href="#hero" class="nav-logo">BPA</a>
 
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#work">Work</a>
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </div>
 
-      <!-- Dark mode toggle -->
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
         <span class="theme-icon">☀️</span>
       </button>
 
-      <!-- Hamburger (mobile) -->
       <button class="nav-menu-btn" id="navMenuBtn" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
     </div>
 
-    <!-- Mobile dropdown -->
     <div class="nav-mobile" id="navMobile">
       <a href="#about"      class="nav-mobile-link">About</a>
       <a href="#work"       class="nav-mobile-link">Work</a>
       <a href="#skills"     class="nav-mobile-link">Skills</a>
       <a href="#experience" class="nav-mobile-link">Experience</a>
+      <a href="#education"  class="nav-mobile-link">Education</a>
       <a href="#contact"    class="nav-mobile-link">Contact</a>
     </div>
   </nav>
@@ -58,19 +55,23 @@
        HERO
        ============================================================ -->
   <section class="hero" id="hero">
-    <!-- Decorative blobs — purely CSS, no images needed -->
     <div class="hero-blob hero-blob-1"></div>
     <div class="hero-blob hero-blob-2"></div>
 
     <div class="hero-content">
       <p class="hero-eyebrow">Hi, I'm</p>
-      <h1 class="hero-name">Bindu Priyanka</h1>
+      <h1 class="hero-name">Bindu Priyanka<br>Achalla</h1>
 
       <p class="hero-tagline">
         I <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
       </p>
 
-      <p class="hero-sub">product &nbsp;·&nbsp; data &nbsp;·&nbsp; AI &nbsp;·&nbsp; growth</p>
+      <!-- EDIT: Swap to a different hero line from the options if you prefer -->
+      <p class="hero-statement">
+        I build products, work with data, and experiment with AI to solve real-world problems.
+      </p>
+
+      <p class="hero-sub">product &nbsp;·&nbsp; data &nbsp;·&nbsp; AI &nbsp;·&nbsp; analytics</p>
 
       <div class="hero-actions">
         <a href="#work"    class="btn btn-primary">See My Work</a>
@@ -78,7 +79,6 @@
       </div>
     </div>
 
-    <!-- Subtle scroll indicator -->
     <div class="hero-scroll">
       <span>Scroll</span>
       <div class="scroll-line"></div>
@@ -98,26 +98,21 @@
         </div>
 
         <div class="about-content">
-          <!-- EDIT: Update this paragraph with your own story -->
           <h2 class="section-heading reveal">Not one thing.<br>All the things.</h2>
 
           <p class="about-text reveal">
-            I've spent my career at the intersection of product, data, and technology — mostly at startups where the job description doesn't really exist yet. I've shipped features, built data pipelines, run growth experiments, and worked closely with customers to figure out what actually matters.
+            I've worked across startups and organizations where I've worn multiple hats — working at the intersection of product, data, and AI. My experience spans building analytics systems, improving product workflows, and experimenting with AI-driven solutions to solve complex, real-world problems.
           </p>
           <p class="about-text reveal">
-            I'm drawn to problems where the answer isn't obvious — where you need to bring together user intuition, analytical rigor, and a willingness to build and break things. I like working across functions: with engineers, designers, sales teams, and sometimes directly with the data itself.
-          </p>
-          <p class="about-text reveal">
-            Right now, I'm particularly excited about AI — not as a buzzword, but as a genuine tool for automating the tedious, augmenting the analytical, and unlocking things that weren't possible before.
+            I enjoy going beyond just analysis — defining metrics, shaping product decisions, and collaborating closely with engineering and business teams to bring ideas into production. Recently, I've been focused on building and improving AI-powered workflows, optimizing systems, and creating scalable solutions that drive measurable impact.
           </p>
 
-          <!-- EDIT: Add or remove tags as needed -->
           <div class="about-tags reveal">
-            <span class="tag">Product</span>
-            <span class="tag">Data</span>
-            <span class="tag">AI / ML</span>
-            <span class="tag">Growth</span>
-            <span class="tag">Analytics</span>
+            <span class="tag">Product Analytics</span>
+            <span class="tag">AI Workflows</span>
+            <span class="tag">A/B Testing</span>
+            <span class="tag">NLP</span>
+            <span class="tag">Data Engineering</span>
             <span class="tag">Strategy</span>
           </div>
         </div>
@@ -136,12 +131,10 @@
       <div class="section-header">
         <span class="section-label reveal">Work</span>
         <h2 class="section-heading reveal">Projects & Case Studies</h2>
-        <p class="section-sub reveal">A few things I've built and shipped.</p>
+        <p class="section-sub reveal">Real problems. Real systems. Measurable impact.</p>
       </div>
 
       <div class="work-grid">
-
-        <!-- EDIT: Each card's data-project value maps to an object in script.js -->
 
         <div class="project-card reveal" data-project="1">
           <div class="project-number">01</div>
@@ -149,41 +142,41 @@
             <span class="project-tag">AI</span>
             <span class="project-tag">Product</span>
           </div>
-          <h3 class="project-title">AI-Powered Catalog Enrichment</h3>
-          <p class="project-desc">Automated product data enrichment using LLMs, reducing manual effort by 80% while improving catalog quality at scale.</p>
+          <h3 class="project-title">Improving AI Accuracy from 75% → 92%</h3>
+          <p class="project-desc">Led evaluation and optimization of AI-driven construction takeoff workflows, redesigning document parsing to achieve near-production-grade accuracy.</p>
           <button class="project-link" aria-label="View case study 1">View Case Study →</button>
         </div>
 
         <div class="project-card reveal" data-project="2">
           <div class="project-number">02</div>
           <div class="project-tags-row">
-            <span class="project-tag">Growth</span>
-            <span class="project-tag">Data</span>
+            <span class="project-tag">AI Agents</span>
+            <span class="project-tag">NLP</span>
           </div>
-          <h3 class="project-title">Growth Experimentation Framework</h3>
-          <p class="project-desc">Built an end-to-end A/B testing system from scratch, enabling the team to run 3× more experiments per quarter with statistical rigor.</p>
+          <h3 class="project-title">AI-Powered Document Analysis Workflows</h3>
+          <p class="project-desc">Built AI-assisted workflows using OpenAI APIs to automate public document analysis, cutting turnaround time by 70–80%.</p>
           <button class="project-link" aria-label="View case study 2">View Case Study →</button>
         </div>
 
         <div class="project-card reveal" data-project="3">
           <div class="project-number">03</div>
           <div class="project-tags-row">
+            <span class="project-tag">Growth</span>
             <span class="project-tag">Analytics</span>
-            <span class="project-tag">Strategy</span>
           </div>
-          <h3 class="project-title">GTM Analytics & Funnel Optimization</h3>
-          <p class="project-desc">Rebuilt the marketing data stack and created a unified attribution model that clarified where pipeline was actually coming from.</p>
+          <h3 class="project-title">Funnel Optimization & Engagement</h3>
+          <p class="project-desc">Used journey mapping and targeted A/B testing to improve user engagement by 15% and eliminate 80% of manual reporting overhead.</p>
           <button class="project-link" aria-label="View case study 3">View Case Study →</button>
         </div>
 
         <div class="project-card reveal" data-project="4">
           <div class="project-number">04</div>
           <div class="project-tags-row">
-            <span class="project-tag">AI Agents</span>
-            <span class="project-tag">Automation</span>
+            <span class="project-tag">Pricing</span>
+            <span class="project-tag">Data</span>
           </div>
-          <h3 class="project-title">AI Marketing Agent</h3>
-          <p class="project-desc">Designed and built an AI agent system for automated content generation, outreach personalization, and campaign optimization.</p>
+          <h3 class="project-title">Demand-Driven Pricing Models</h3>
+          <p class="project-desc">Built dynamic pricing models for e-commerce agents using trend analysis and experimentation, increasing revenue per SKU by 3–5%.</p>
           <button class="project-link" aria-label="View case study 4">View Case Study →</button>
         </div>
 
@@ -192,15 +185,11 @@
   </section>
 
 
-  <!-- ============================================================
-       MODAL (case study detail — populated by script.js)
-       ============================================================ -->
+  <!-- Modal -->
   <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modal" id="modal">
       <button class="modal-close" id="modalClose" aria-label="Close modal">✕</button>
-      <div class="modal-body" id="modalBody">
-        <!-- Content injected dynamically -->
-      </div>
+      <div class="modal-body" id="modalBody"></div>
     </div>
   </div>
 
@@ -218,18 +207,16 @@
 
       <div class="skills-grid">
 
-        <!-- EDIT: Update skill items to match your actual skills -->
-
         <div class="skill-card reveal">
           <div class="skill-icon">⚡</div>
           <h3 class="skill-group">Product &amp; Strategy</h3>
           <ul class="skill-list">
-            <li>Product discovery &amp; roadmapping</li>
-            <li>User research &amp; interviews</li>
-            <li>PRD writing &amp; spec design</li>
-            <li>Prioritization frameworks</li>
-            <li>Go-to-market strategy</li>
-            <li>Stakeholder management</li>
+            <li>Product Analytics</li>
+            <li>KPI Definition &amp; Tracking</li>
+            <li>A/B Testing &amp; Experimentation</li>
+            <li>Customer Journey Analysis</li>
+            <li>Strategic Analysis</li>
+            <li>Cross-functional Collaboration</li>
           </ul>
         </div>
 
@@ -237,12 +224,12 @@
           <div class="skill-icon">🤖</div>
           <h3 class="skill-group">AI &amp; Automation</h3>
           <ul class="skill-list">
-            <li>LLM application development</li>
-            <li>Prompt engineering</li>
-            <li>AI agent design</li>
-            <li>RAG pipelines</li>
-            <li>Workflow automation</li>
-            <li>Claude, GPT-4, Gemini</li>
+            <li>AI Workflow Design</li>
+            <li>OpenAI APIs</li>
+            <li>AutoGen Studio</li>
+            <li>Document Processing &amp; NLP</li>
+            <li>Agentic Systems</li>
+            <li>Prompt Engineering</li>
           </ul>
         </div>
 
@@ -250,12 +237,12 @@
           <div class="skill-icon">📊</div>
           <h3 class="skill-group">Data &amp; Analytics</h3>
           <ul class="skill-list">
-            <li>SQL &amp; data modeling</li>
-            <li>Python (pandas, NumPy)</li>
-            <li>A/B testing &amp; statistics</li>
-            <li>Attribution modeling</li>
-            <li>Dashboard design</li>
-            <li>Data pipeline engineering</li>
+            <li>SQL &amp; Data Modeling</li>
+            <li>Python (pandas, NumPy, scikit-learn)</li>
+            <li>R</li>
+            <li>Time Series Analysis</li>
+            <li>Topic Modeling &amp; Sentiment Analysis</li>
+            <li>Data Visualization</li>
           </ul>
         </div>
 
@@ -263,12 +250,12 @@
           <div class="skill-icon">🛠</div>
           <h3 class="skill-group">Tools &amp; Technologies</h3>
           <ul class="skill-list">
-            <li>Mixpanel, Amplitude, PostHog</li>
-            <li>dbt, BigQuery, Snowflake</li>
-            <li>Segment, Rudderstack</li>
-            <li>Figma, Notion, Linear</li>
-            <li>React, Next.js basics</li>
-            <li>Git, REST APIs, Webhooks</li>
+            <li>Power BI, Tableau, Looker</li>
+            <li>Snowflake, Airflow</li>
+            <li>Streamlit</li>
+            <li>AWS, Azure</li>
+            <li>Git, Jira</li>
+            <li>Excel (Advanced)</li>
           </ul>
         </div>
 
@@ -290,23 +277,21 @@
 
       <div class="timeline">
 
-        <!-- EDIT: Add / remove timeline items as needed -->
-
         <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <div class="timeline-meta">
-              <span class="timeline-company">Sanio AI</span>
-              <span class="timeline-period">2024 – Present</span>
+              <span class="timeline-company">Paladio.ai</span>
+              <span class="timeline-period">Oct 2025 – Present</span>
             </div>
-            <h3 class="timeline-role">Co-founder · Product &amp; Growth</h3>
+            <h3 class="timeline-role">Product Analyst</h3>
             <p class="timeline-desc">
-              Building AI-native tools for B2B growth. Responsible for product strategy, GTM execution, and AI feature development. Shipped the first version of a marketing automation agent used by early customers. Wearing every hat from user research to writing API integrations.
+              Improved AI-driven construction takeoff accuracy from ~75% to ~92% by leading evaluation and optimization of document parsing workflows. Redesigned OCR-based systems into intent-aware, document-level processing. Defined system-level metrics (accuracy, latency, recovery) to guide production deployment. Built demand-driven pricing models for e-commerce agents — increasing revenue per SKU by 3–5% and reducing price volatility by ~20%.
             </p>
             <div class="timeline-tags">
-              <span class="tag tag-sm">AI Agents</span>
+              <span class="tag tag-sm">AI Systems</span>
               <span class="tag tag-sm">Product</span>
-              <span class="tag tag-sm">GTM</span>
+              <span class="tag tag-sm">Pricing Models</span>
             </div>
           </div>
         </div>
@@ -315,17 +300,17 @@
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <div class="timeline-meta">
-              <span class="timeline-company">Previous Startup</span>  <!-- EDIT -->
-              <span class="timeline-period">2022 – 2024</span>
+              <span class="timeline-company">Basey Insurance</span>
+              <span class="timeline-period">May 2025 – Oct 2025</span>
             </div>
-            <h3 class="timeline-role">Product Manager · Data</h3>
+            <h3 class="timeline-role">Data Analyst</h3>
             <p class="timeline-desc">
-              Led product and analytics across core platform features. Built the internal data stack from scratch, ran growth experiments, and worked directly with customers to define the product roadmap. Cut reporting time by 70% by moving from spreadsheets to a proper BI layer.
+              Improved user engagement by 15% through journey mapping and targeted A/B testing. Defined and tracked key product metrics across activation, conversion, retention, and drop-offs. Built automated Power BI dashboards that eliminated 80% of manual reporting effort.
             </p>
             <div class="timeline-tags">
-              <span class="tag tag-sm">Product</span>
               <span class="tag tag-sm">Analytics</span>
-              <span class="tag tag-sm">Growth</span>
+              <span class="tag tag-sm">A/B Testing</span>
+              <span class="tag tag-sm">Power BI</span>
             </div>
           </div>
         </div>
@@ -334,18 +319,75 @@
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <div class="timeline-meta">
-              <span class="timeline-company">Earlier Roles</span>  <!-- EDIT -->
-              <span class="timeline-period">2019 – 2022</span>
+              <span class="timeline-company">San Diego County Taxpayers Association</span>
+              <span class="timeline-period">Apr 2024 – Apr 2025</span>
             </div>
-            <h3 class="timeline-role">Analyst · Associate PM</h3>
+            <h3 class="timeline-role">Data Analyst</h3>
             <p class="timeline-desc">
-              Started in analytics and data, transitioned into product. Worked across e-commerce, marketplace, and SaaS businesses. Developed strong foundations in user research, SQL, and product thinking — and learned that good data and good product intuition are not opposites.
+              Built AI-assisted workflows using OpenAI APIs to automate document analysis, reducing turnaround time by 70–80%. Applied NLP techniques — topic modeling, clustering, and sentiment analysis — to large-scale text data. Developed interactive Streamlit dashboards for exploring public sentiment and policy insights.
             </p>
             <div class="timeline-tags">
-              <span class="tag tag-sm">Data</span>
-              <span class="tag tag-sm">SQL</span>
-              <span class="tag tag-sm">E-commerce</span>
+              <span class="tag tag-sm">OpenAI APIs</span>
+              <span class="tag tag-sm">NLP</span>
+              <span class="tag tag-sm">Streamlit</span>
             </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-company">Mirum Infra</span>
+              <span class="timeline-period">Jan 2021 – June 2023</span>
+            </div>
+            <h3 class="timeline-role">Business Data Analyst</h3>
+            <p class="timeline-desc">
+              Analyzed cost and schedule data across 50+ infrastructure projects, improving on-time delivery by 18%. Built dashboards for cost tracking and forecasting. Reduced annual overspend by ~$28K through procurement analysis. Improved reporting accuracy by 30% through standardized frameworks.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag tag-sm">Data Analysis</span>
+              <span class="tag tag-sm">Forecasting</span>
+              <span class="tag tag-sm">Operations</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       EDUCATION
+       ============================================================ -->
+  <section class="section education" id="education">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label reveal">Education</span>
+        <h2 class="section-heading reveal">Academic Background</h2>
+      </div>
+
+      <div class="education-grid">
+
+        <div class="edu-card reveal">
+          <div class="edu-badge">MS</div>
+          <div class="edu-body">
+            <p class="edu-degree">Master of Science</p>
+            <p class="edu-field">Business Analytics</p>
+            <p class="edu-school">University of California, San Diego</p>
+            <p class="edu-year">Dec 2024</p>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-badge">BTech</div>
+          <div class="edu-body">
+            <p class="edu-degree">Bachelor of Technology</p>
+            <p class="edu-field">Computer Science &amp; Engineering</p>
+            <p class="edu-school">Gayatri Vidya Parishad College of Engineering, India</p>
+            <p class="edu-year">June 2022</p>
           </div>
         </div>
 
@@ -366,17 +408,14 @@
           Whether you have a project in mind, a question, or just want to connect — my inbox is open.
         </p>
 
-        <!-- EDIT: Replace with your email -->
-        <a href="mailto:bindu@sanio.ai" class="contact-email">bindu@sanio.ai</a>
+        <a href="mailto:bindupriyankaachalla@gmail.com" class="contact-email">
+          bindupriyankaachalla@gmail.com
+        </a>
 
         <div class="contact-links">
-          <!-- EDIT: Replace with your LinkedIn / GitHub URLs -->
-          <a href="https://linkedin.com/in/bindupriyankat" class="contact-link" target="_blank" rel="noopener noreferrer">
-            LinkedIn ↗
-          </a>
-          <a href="https://github.com/bindupriyankat" class="contact-link" target="_blank" rel="noopener noreferrer">
-            GitHub ↗
-          </a>
+          <!-- EDIT: Replace # with your actual LinkedIn and GitHub URLs -->
+          <a href="#" class="contact-link" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="#" class="contact-link" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
         </div>
       </div>
     </div>
@@ -388,7 +427,7 @@
        ============================================================ -->
   <footer class="footer">
     <div class="container">
-      <p>© 2025 Bindu Priyanka. Built with intention.</p>
+      <p>© 2025 Bindu Priyanka Achalla. Built with intention.</p>
     </div>
   </footer>
 
