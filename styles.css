@@ -384,17 +384,26 @@ h3 { font-size: 1.15rem; }
 
 .gh-projects-header {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
-  margin-top: 4rem;
-  margin-bottom: 1.25rem;
+  gap: 1rem;
+  margin-top: 4.5rem;
+  margin-bottom: 1.75rem;
   padding-top: 3rem;
   border-top: 1px solid var(--border);
 }
 
+.gh-header-left { display: flex; flex-direction: column; gap: 0.25rem; }
+
 .gh-projects-title {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.gh-projects-sub {
+  font-size: 0.85rem;
   color: var(--text-muted);
 }
 
@@ -402,85 +411,113 @@ h3 { font-size: 1.15rem; }
   font-size: 0.85rem;
   font-weight: 500;
   color: var(--accent);
+  white-space: nowrap;
   transition: opacity var(--ease);
+  flex-shrink: 0;
 }
-.gh-all-link:hover { opacity: 0.7; }
+.gh-all-link:hover { opacity: 0.65; }
 
+/* 3-column grid — gives each card ~340px width in a 1100px container */
 .gh-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
 }
 
 .gh-card {
   display: flex;
   flex-direction: column;
+  gap: 0.6rem;
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  padding: 1.6rem 1.75rem;
   text-decoration: none;
-  cursor: pointer;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+  position: relative;
+  overflow: hidden;
 }
+
+/* Accent left bar on hover */
+.gh-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 3px;
+  background: var(--accent);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.28s ease;
+  border-radius: 3px 0 0 3px;
+}
+.gh-card:hover::before { transform: scaleY(1); }
+
 .gh-card:hover {
-  border-color: var(--accent);
-  box-shadow: var(--shadow-sm);
+  border-color: var(--border);
+  box-shadow: var(--shadow-md);
   transform: translateY(-4px);
 }
 
-.gh-card-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 0.85rem;
-}
-
-.gh-icon { font-size: 1.2rem; line-height: 1; }
-
-.gh-lang {
-  font-size: 0.65rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  color: var(--text-light);
+/* Category label above the title */
+.gh-category {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
+  color: var(--accent);
 }
 
 .gh-card-title {
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 600;
-  letter-spacing: -0.015em;
-  margin-bottom: 0.6rem;
+  letter-spacing: -0.018em;
   line-height: 1.35;
+  color: var(--text);
   transition: color var(--ease);
 }
 .gh-card:hover .gh-card-title { color: var(--accent); }
 
 .gh-card-desc {
-  font-size: 0.8rem;
+  font-size: 0.855rem;
   color: var(--text-muted);
-  line-height: 1.65;
+  line-height: 1.7;
   flex: 1;
-  margin-bottom: 1rem;
+  margin-top: 0.1rem;
+}
+
+/* Footer row: tags left, arrow right */
+.gh-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
 }
 
 .gh-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.35rem;
-  margin-top: auto;
 }
 
 .gh-tag {
-  font-size: 0.65rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--accent);
-  background: var(--accent-alpha);
-  padding: 0.2rem 0.5rem;
-  border-radius: 4px;
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  padding: 0.2rem 0.55rem;
+  border-radius: 100px;
 }
+
+.gh-arrow {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  flex-shrink: 0;
+  transition: color var(--ease), transform var(--ease);
+}
+.gh-card:hover .gh-arrow { color: var(--accent); transform: translate(2px, -2px); }
 
 
 /* =============================================================================
@@ -644,6 +681,7 @@ h3 { font-size: 1.15rem; }
   .skills-grid    { grid-template-columns: repeat(2, 1fr); }
   .education-grid { grid-template-columns: 1fr; }
   .gh-grid        { grid-template-columns: repeat(2, 1fr); }
+  .gh-projects-header { align-items: flex-start; }
   .timeline::before { left: 5px; }
   .timeline-item { padding-left: 2rem; }
   .modal { padding: 2rem; }
@@ -654,6 +692,7 @@ h3 { font-size: 1.15rem; }
   .container      { padding: 0 1.25rem; }
   .skills-grid    { grid-template-columns: 1fr; }
   .gh-grid        { grid-template-columns: 1fr; }
+  .gh-projects-header { flex-direction: column; gap: 0.75rem; }
   .contact-links  { flex-direction: column; gap: 1rem; }
   .modal          { padding: 1.5rem; }
   .hero-actions   { flex-direction: column; }
