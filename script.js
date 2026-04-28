@@ -70,10 +70,10 @@ document.querySelectorAll('.nav-mobile-link').forEach(link => {
    ============================================================================= */
 
 const PHRASES = [
-  'improve AI accuracy from 75% to 92%.',
-  'build analytics systems that drive decisions.',
-  'design AI workflows that scale.',
-  'turn complex data into measurable impact.',
+  'like figuring out why things break.',
+  'work with data, product, and AI.',
+  'enjoy the messy, problem-first part of the work.',
+  'curious about most things, really.',
 ];
 
 const typedEl = document.getElementById('typedText');
