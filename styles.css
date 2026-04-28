@@ -379,6 +379,111 @@ h3 { font-size: 1.15rem; }
 
 
 /* =============================================================================
+   9b. GITHUB PROJECT CARDS
+   ============================================================================= */
+
+.gh-projects-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+  margin-bottom: 1.25rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--border);
+}
+
+.gh-projects-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.gh-all-link {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--accent);
+  transition: opacity var(--ease);
+}
+.gh-all-link:hover { opacity: 0.7; }
+
+.gh-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.gh-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+.gh-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-4px);
+}
+
+.gh-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.85rem;
+}
+
+.gh-icon { font-size: 1.2rem; line-height: 1; }
+
+.gh-lang {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--text-light);
+  text-transform: uppercase;
+}
+
+.gh-card-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin-bottom: 0.6rem;
+  line-height: 1.35;
+  transition: color var(--ease);
+}
+.gh-card:hover .gh-card-title { color: var(--accent); }
+
+.gh-card-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.gh-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: auto;
+}
+
+.gh-tag {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-alpha);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+
+/* =============================================================================
    10. SKILLS
    ============================================================================= */
 
@@ -525,6 +630,7 @@ h3 { font-size: 1.15rem; }
 @media (max-width: 1024px) {
   .skills-grid    { grid-template-columns: repeat(2, 1fr); }
   .education-grid { grid-template-columns: repeat(2, 1fr); }
+  .gh-grid        { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
@@ -537,6 +643,7 @@ h3 { font-size: 1.15rem; }
   .work-grid      { grid-template-columns: 1fr; }
   .skills-grid    { grid-template-columns: repeat(2, 1fr); }
   .education-grid { grid-template-columns: 1fr; }
+  .gh-grid        { grid-template-columns: repeat(2, 1fr); }
   .timeline::before { left: 5px; }
   .timeline-item { padding-left: 2rem; }
   .modal { padding: 2rem; }
@@ -546,6 +653,7 @@ h3 { font-size: 1.15rem; }
 @media (max-width: 480px) {
   .container      { padding: 0 1.25rem; }
   .skills-grid    { grid-template-columns: 1fr; }
+  .gh-grid        { grid-template-columns: 1fr; }
   .contact-links  { flex-direction: column; gap: 1rem; }
   .modal          { padding: 1.5rem; }
   .hero-actions   { flex-direction: column; }
