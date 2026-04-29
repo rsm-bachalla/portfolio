@@ -163,6 +163,20 @@ const PROJECTS = {
     ],
   },
 
+  5: {
+    label:   'AI Agents · Automation',
+    title:   'OpenClaw: Automated B2B Marketing Agent',
+    problem: 'Finding the right leads and following up consistently is one of those things that sounds simple but takes a huge amount of time when done manually. Searching for ICP-matching companies, tracking contact info, writing personalized emails, logging what was sent and when — it adds up fast and usually falls through the cracks.',
+    what:    'Built OpenClaw, an end-to-end agentic marketing system. It uses web search to find companies that match a target customer profile, enriches and stores contact data in a structured pipeline, and automatically sends personalized outreach emails through Gmail via Composio. The agent tracks campaign status, manages follow-up sequences, and logs every action — so nothing gets missed and the whole process runs on demand without manual input.',
+    tools:   ['Claude AI', 'Composio', 'Gmail API', 'Web Search', 'Python', 'Agentic Workflows'],
+    impact:  [
+      'Fully automated the lead discovery to email outreach pipeline',
+      'Campaigns run on demand with no manual steps',
+      'Contact pipeline tracked with status, follow-up scheduling, and outreach logs',
+      'Built-in guardrails for compliance (opt-out handling, honest claims)',
+    ],
+  },
+
   4: {
     label:   'Pricing · Data · Paladio.ai',
     title:   'Demand-Driven Pricing Models',
