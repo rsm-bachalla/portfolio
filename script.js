@@ -70,9 +70,9 @@ document.querySelectorAll('.nav-mobile-link').forEach(link => {
    ============================================================================= */
 
 const PHRASES = [
-  'like figuring out why things aren\'t working.',
-  'work in data, AI, and product.',
-  'enjoy the problem more than the solution.',
+  'like the problem before the solution.',
+  'got into AI because the problems pulled me there.',
+  'turn messy data into decisions.',
   'looking for full-time roles in analytics and AI.',
 ];
 
