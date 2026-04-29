@@ -70,10 +70,10 @@ document.querySelectorAll('.nav-mobile-link').forEach(link => {
    ============================================================================= */
 
 const PHRASES = [
-  'like figuring out why things break.',
-  'work with data, product, and AI.',
-  'enjoy the messy, problem-first part of the work.',
-  'curious about most things, really.',
+  'work at the gap between data and decisions.',
+  'like the problem before the solution.',
+  'build with data, product, and AI.',
+  'open to roles in analytics and AI.',
 ];
 
 const typedEl = document.getElementById('typedText');
