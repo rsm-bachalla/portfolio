@@ -70,10 +70,10 @@ document.querySelectorAll('.nav-mobile-link').forEach(link => {
    ============================================================================= */
 
 const PHRASES = [
-  'work at the gap between data and decisions.',
-  'like the problem before the solution.',
-  'build with data, product, and AI.',
-  'open to roles in analytics and AI.',
+  'like figuring out why things aren\'t working.',
+  'work in data, AI, and product.',
+  'enjoy the problem more than the solution.',
+  'looking for full-time roles in analytics and AI.',
 ];
 
 const typedEl = document.getElementById('typedText');
@@ -124,8 +124,8 @@ const PROJECTS = {
   1: {
     label:   'AI · Product · Paladio.ai',
     title:   'Improving AI Accuracy from 75% → 92%',
-    problem: 'AI-driven construction takeoff had only ~75% accuracy. The system used page-level OCR processing, which missed cross-page context — causing errors that cascaded into downstream estimation and bidding workflows. Every inaccuracy meant manual rework for the ops team and eroded trust in the system.',
-    what:    'Led a systematic evaluation of the full document parsing pipeline to identify failure modes. Redesigned the OCR-based workflow into intent-aware, document-level processing that maintained context across pages. Defined a production metrics framework — accuracy, latency, and recovery rate — to objectively guide deployment decisions and give the engineering team clear targets.',
+    problem: 'AI-driven construction takeoff had only ~75% accuracy. The system used page-level OCR processing, which missed cross-page context, causing errors that cascaded into downstream estimation and bidding workflows. Every inaccuracy meant manual rework for the ops team and eroded trust in the system.',
+    what:    'Led a systematic evaluation of the full document parsing pipeline to identify failure modes. Redesigned the OCR-based workflow into intent-aware, document-level processing that maintained context across pages. Defined a production metrics framework (accuracy, latency, and recovery rate) to guide deployment decisions and give the engineering team clear targets.',
     tools:   ['Python', 'Document Parsing Pipelines', 'OCR Systems', 'SQL', 'System Metrics Design'],
     impact:  [
       'Accuracy improved from ~75% → ~92%',
@@ -138,7 +138,7 @@ const PROJECTS = {
   2: {
     label:   'AI · NLP · San Diego County Taxpayers Association',
     title:   'AI-Powered Document Analysis Workflows',
-    problem: 'Analysts were manually reading and categorizing hundreds of public policy documents per reporting cycle — a process taking days with inconsistent output quality. There was no scalable way to surface patterns across large text corpora.',
+    problem: 'Analysts were manually reading and categorizing hundreds of public policy documents per reporting cycle, which took days and produced inconsistent output. There was no scalable way to surface patterns across large text corpora.',
     what:    'Built AI-assisted workflows using OpenAI APIs to automate document analysis end-to-end. Applied NLP techniques including topic modeling, clustering, and sentiment analysis to extract structured insights from large-scale unstructured text. Built interactive Streamlit dashboards so stakeholders could explore public sentiment and policy insights without SQL knowledge.',
     tools:   ['OpenAI APIs', 'Python', 'NLP (topic modeling, clustering, sentiment)', 'Streamlit', 'pandas'],
     impact:  [
@@ -152,7 +152,7 @@ const PROJECTS = {
   3: {
     label:   'Growth · Analytics · Basey Insurance',
     title:   'Funnel Optimization & Engagement',
-    problem: 'User engagement was stagnating and drop-off points were invisible. The team lacked clear metric definitions and relied on manual, error-prone reporting that consumed hours each week — leaving no time for analysis or experimentation.',
+    problem: 'User engagement was stagnating and drop-off points were invisible. The team lacked clear metric definitions and relied on manual, error-prone reporting that consumed hours each week, leaving no time for analysis or experimentation.',
     what:    'Conducted in-depth customer journey mapping to identify drop-off points across the funnel. Designed and ran targeted A/B tests against the highest-impact drop-off stages. Defined and formally tracked product metrics across activation, conversion, retention, and drop-offs. Built automated Power BI dashboards replacing the manual reporting workflow entirely.',
     tools:   ['Power BI', 'SQL', 'Python', 'A/B Testing', 'Journey Mapping'],
     impact:  [
