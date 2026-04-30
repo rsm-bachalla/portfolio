@@ -70,10 +70,11 @@ document.querySelectorAll('.nav-mobile-link').forEach(link => {
    ============================================================================= */
 
 const PHRASES = [
-  'like the problem before the solution.',
-  'got into AI because the problems pulled me there.',
-  'turn messy data into decisions.',
-  'looking for full-time roles in analytics and AI.',
+  'build data-driven products.',
+  'turn messy data into real decisions.',
+  'use AI to automate and ship faster.',
+  'translate user behavior into product features.',
+  'connect data, AI, and product thinking.',
 ];
 
 const typedEl = document.getElementById('typedText');
