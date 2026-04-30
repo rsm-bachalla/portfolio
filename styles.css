@@ -263,10 +263,10 @@ h3 { font-size: 1.15rem; }
   letter-spacing: -0.01em;
   transition: all var(--ease);
 }
-.btn-primary { background: var(--text); color: var(--bg); }
-.btn-primary:hover { opacity: 0.8; transform: translateY(-2px); }
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover { opacity: 0.88; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(95,122,157,0.35); }
 .btn-ghost { border: 1px solid var(--border); color: var(--text-muted); }
-.btn-ghost:hover { border-color: var(--text-muted); color: var(--text); transform: translateY(-2px); }
+.btn-ghost:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
 
 
 /* =============================================================================
@@ -680,28 +680,75 @@ h3 { font-size: 1.15rem; }
 
 
 /* =============================================================================
-   13. CONTACT
+   13. CERTIFICATIONS
    ============================================================================= */
 
-.contact { background: var(--bg-secondary); background-image: none; }
-.contact-inner { text-align: center; max-width: 560px; margin: 0 auto; }
-.contact-inner .section-label { margin-bottom: 1rem; }
-.contact-inner .section-heading { margin-bottom: 0; }
+.certifications { background: var(--bg-secondary); background-image: none; }
 
-.contact-sub { font-size: 1.05rem; color: var(--text-muted); margin: 1.25rem 0 2.5rem; line-height: 1.75; }
-
-.contact-email {
-  display: inline-block; font-size: 1.15rem; font-weight: 600;
-  letter-spacing: -0.02em; color: var(--text);
-  border-bottom: 2px solid var(--accent); padding-bottom: 2px;
-  margin-bottom: 2.25rem; transition: color var(--ease);
-  word-break: break-all;
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
 }
-.contact-email:hover { color: var(--accent); }
 
-.contact-links { display: flex; gap: 2rem; justify-content: center; }
-.contact-link  { font-size: 0.9rem; font-weight: 500; color: var(--text-muted); transition: color var(--ease); }
-.contact-link:hover { color: var(--accent); }
+.cert-card {
+  display: flex; align-items: center; gap: 1.1rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--card-bg); border: 1px solid var(--border);
+  border-radius: var(--radius); text-decoration: none;
+  transition: all var(--ease);
+}
+.cert-card:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: var(--shadow-sm); }
+
+.cert-icon { font-size: 1.4rem; flex-shrink: 0; }
+.cert-body { flex: 1; }
+.cert-name   { font-size: 0.92rem; font-weight: 600; color: var(--text); }
+.cert-issuer { font-size: 0.78rem; color: var(--text-light); margin-top: 0.2rem; }
+.cert-arrow  { color: var(--text-light); font-size: 0.9rem; transition: all var(--ease); }
+.cert-card:hover .cert-arrow { color: var(--accent); transform: translate(2px, -2px); }
+
+
+/* =============================================================================
+   14. CONTACT
+   ============================================================================= */
+
+.contact { background: var(--bg); background-image: none; }
+
+.contact-top { text-align: center; max-width: 560px; margin: 0 auto 3.5rem; }
+.contact-sub { font-size: 1rem; color: var(--text-muted); margin-top: 1rem; line-height: 1.75; }
+
+.contact-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;
+}
+
+.contact-why { display: flex; flex-direction: column; gap: 2rem; }
+.contact-block-label {
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+}
+.contact-block-text { color: var(--text-muted); line-height: 1.8; font-size: 0.95rem; }
+
+.contact-options { display: flex; flex-direction: column; gap: 1rem; }
+.contact-option {
+  display: flex; align-items: center; gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--card-bg); border: 1px solid var(--border);
+  border-radius: var(--radius); text-decoration: none;
+  transition: all var(--ease);
+}
+.contact-option:hover { border-color: var(--accent); transform: translateX(5px); box-shadow: var(--shadow-sm); }
+
+.contact-option-icon {
+  width: 42px; height: 42px; border-radius: 10px;
+  background: var(--accent-alpha); color: var(--accent);
+  font-size: 0.82rem; font-weight: 700;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.contact-option-body { flex: 1; }
+.contact-option-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-light); }
+.contact-option-value { font-size: 0.9rem; color: var(--text); font-weight: 500; margin-top: 0.15rem; word-break: break-all; }
+.contact-option-arrow { color: var(--text-light); font-size: 1rem; transition: all var(--ease); }
+.contact-option:hover .contact-option-arrow { transform: translateX(4px); color: var(--accent); }
 
 
 /* =============================================================================
@@ -738,6 +785,7 @@ h3 { font-size: 1.15rem; }
   .skills-grid    { grid-template-columns: repeat(2, 1fr); }
   .education-grid { grid-template-columns: repeat(2, 1fr); }
   .gh-grid        { grid-template-columns: repeat(2, 1fr); }
+  .contact-grid   { gap: 2.5rem; }
 }
 
 @media (max-width: 768px) {
@@ -757,6 +805,7 @@ h3 { font-size: 1.15rem; }
   .timeline-item { padding-left: 2rem; }
   .modal { padding: 2rem; }
   .hero-scroll { display: none; }
+  .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
 }
 
 @media (max-width: 480px) {
@@ -764,9 +813,9 @@ h3 { font-size: 1.15rem; }
   .skills-grid    { grid-template-columns: 1fr; }
   .gh-grid        { grid-template-columns: 1fr; }
   .gh-projects-header { flex-direction: column; gap: 0.75rem; }
-  .contact-links  { flex-direction: column; gap: 1rem; }
   .modal          { padding: 1.5rem; }
   .hero-actions   { flex-direction: column; }
   .hero-actions .btn { width: 100%; justify-content: center; }
   .edu-card { flex-direction: column; gap: 1rem; }
+  .cert-grid { grid-template-columns: 1fr; }
 }
